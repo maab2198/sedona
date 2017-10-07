@@ -1,5 +1,6 @@
 html,
-body {
+body,
+img {
 	margin: 0;
 	padding: 0;
 }
@@ -8,7 +9,7 @@ body {
 	min-width: 768px;	
 
 	text-transform: uppercase;
-
+	font-size: 0;
 	background: #C4E5F6;
 } 
 
@@ -33,7 +34,7 @@ body {
 	box-sizing: border-box;
 	padding: 5px;
 
-	background: #E9E9E9;
+	background: #E9E9E9 url(../img/logo-photo.jpg) no-repeat center;
 
 }
 .header-logo {
@@ -42,15 +43,17 @@ body {
 	margin:auto;
 	margin-top: 70px;
 	margin-bottom:80px;
+
 }
 
 .header-border {
 	width: 100%;
-	height: 40px;
-	margin-top: -40px;
+	height: 37px;
+	margin-top: -37px;
 	margin-bottom: 60px;
 
-	background:#ffffff;
+	background:url(../img/2.svg) no-repeat;
+	background-size: cover;
 
 }
 
@@ -67,7 +70,7 @@ body {
 .index-content {
 
 
-	min-height: 255px;
+
 }
 .text-block {
 	float:left;
@@ -80,7 +83,7 @@ body {
 .photo-block {
 	float:left;
 	width:512px;
-	min-height: 255px;
+
 }
 .colums {
 	margin-top: 55px;
@@ -93,11 +96,11 @@ body {
 	width:196px;
 	background-color:#eeeeee;
 	padding: 30px;
-	margin-bottom: 60px;
+	margin-bottom: 55px;
 
 }
 .house{
-	margin-top: 15px;
+	margin-top: 20px;
 	background-color:white;
 	
 }
@@ -109,6 +112,7 @@ body {
 	box-sizing: border-box;
 	margin-top:135px;
 	border:1px solid transparent;
+	background: url(../img/map.jpg);
 }
 
 .index-search form {
@@ -130,6 +134,7 @@ body {
 	background:#766357;
 }
 .main-footer {
+	font-size: 0;
 	padding:35px 0;
 	width: 100%;
 	margin-top:-120px;
@@ -146,7 +151,7 @@ body {
 }
 .social-btn{
 	display: inline-block;
-	width:45px;
+	width:47px;
 	margin-left: 5px;
-	height:45px;
+	height:47px;
 }
