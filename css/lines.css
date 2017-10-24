@@ -1,20 +1,31 @@
 
 
-p,ul,a,li,h1,h2,span,b,h3,h4,input,button, .footer-contacts,.price{
-	display: none;
+
+
+h1,
+
+
+
+h3,
+h4,
+input,
+button,
+.footer-contacts,
+.price {
+  display: none;
 }
 
 
-body * > *{
-	outline: 1px solid #DB0800;
+body * > * {
+  outline: 1px solid #db0800;
 }
 
-body * > *> *{
-	outline: 1px solid #79146C;
+body * > * > * {
+  outline: 1px solid #79146c;
 }
 
-body * > *> * > *{
-	outline: 1px solid #0FD611;
+body * > * > * > * {
+  outline: 1px solid #0fd611;
 }
 
 
