@@ -2,14 +2,13 @@
 <html lang ="ru">
 	<head>
 		<link href="css/normalize.css" rel="stylesheet">
-		<link href="css/lines.css" rel="stylesheet">
 		<link href="css/sedona.css" rel="stylesheet">
 		<meta charset="utf-8">
 		<title>Sedona</title>
 	</head>
 	<body>
 	<div class="container">
-	<header classs="main-header">
+	<header class="main-header">
 		<nav class="main-navigation clearfix">
 			<ul>
 				<li>
@@ -57,18 +56,18 @@
 				<img src="img/photo_1.jpg" width=100% height="256" alt="city">
 			</div>
 		</div>
-		<div class="columns clearfix">
-			<div class="column icon house">
+		<div class="clearfix">
+			<div class="column white column-icon house">
 				<h2>Жилье</h2>
 				<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
 			</div>
-			<div class="column icon food">
+			<div class="column white column-icon food">
 				<h2>ЕДА</h2>
 				<p>
 				Всегда заказывайте ФИРМЕННЫЙ БУРГЕР,
 				Вы НЕ разочаруетесь!</p>
 			</div>
-			<div class="column icon suvenirs">
+			<div class="column white column-icon suvenirs">
 				<h2>СУВЕНИРЫ</h2>
 				<p>
 				Не только китайского, но и местного производства!
@@ -108,39 +107,56 @@
 				</p>
 			</div>
 		</div>
+
 		<div class="middle-text">
 			<b class="question">Заинтересовались ?</b>
 			<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
 			</p>
 		</div>
 		<div class="index-search">
-				<form  method="get">
-					<div class="form-label">ПОИСК ГОСТИНИЦЫ В седоне</div>
+				<button class="btn search-btn" type="button">ПОИСК ГОСТИНИЦЫ В седоне</button>
+				<form action="#" method="get">
+					<p>
 					<label for="dataIn">Дата заезда:</label>
-					<input type="text" name="dataIn" id="dataIn">
+					<input type="text" name="dataIn" id="dataIn" placeholder="24 апреля 2017">
+					<button class="icon-calendar"> </button>
+				</p>
+				<p>
 					<label for="dataOut">Дата выезда:</label>
-					<input type="text" name="dataOut" id="dataOut">
-
+					<input type="text" name="dataOut" id="dataOut" placeholder="4 июля 2017">
+					<button class="icon-calendar"> </button>
+				</p>
+				<p class="adults">
 					<label for="calcAdults">Взрослые:</label>
-					<input type="text" name="calcAdults" id="calcAdults">
-
+					<span class="calc">
+					<button class="icon-minus"> </button>
+					<input  type="text" name="calcAdults" id="calcAdults" value="2">
+					<button class="icon-plus"> </button>
+				</span>
+				</p>
+				<p class="children">
 					<label for="calcChildren">Дети:</label>
-					<input type="calcChildren" name="calcChildren" id="calcChildren">
-					<a class="btn" href=#>Найти</a>
+					<span class="calc">
+					<button class="icon-minus"> </button>
+					<input type="text" name="calcChildren" id="calcChildren" value="0">
+					<button class="icon-plus"> </button>
+				</span>
+				</p>
+					<a class="btn btn-blue submit" href=#>Найти</a>
 				</form>
 		</div>
 	</main>
 	<footer class ="main-footer clearfix"> 
 				<section class="footer-heshtag">
-					#VISITSEDONA
+				<a href ="#">#VISITSEDONA</a>
 				</section>
 				<section class="footer-social">
-					<a class="social-btn social-btn-twitter" href="#"></a>
-					<a class="social-btn social-btn-fb" href="#"></a>
-					<a class="social-btn social-btn-youtube" href="#"></a>
+					<a class="social-btn icon-twitter" href="#"></a>
+					<a class="social-btn icon-facebook" href="#"></a>
+					<a class="social-btn icon-youtube" href="#"></a>
 				</section>
 				<section class="footer-copyright">
-				HTMLACADEMY
+				<span>WEBSITE BY</span> <a href="https://htmlacademy.ru"></a>
 				</section>
 	</footer>
 	</div>

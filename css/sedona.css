@@ -5,6 +5,16 @@ img {
   padding: 0;
 }
 
+/*----------------font-face-----------*/
+@font-face {
+  font-weight: normal;
+  font-family: 'symbols-sedona';
+  font-style: normal;
+
+  src: url('../fonts/symbols-sedona.woff') format('woff'),
+  url('../fonts/symbols-sedona.woff2') format('woff2');
+}
+
 body {
   min-width: 768px;
 
@@ -18,6 +28,8 @@ body {
 }
 
 .container {
+  position: relative;
+
   width: 768px;
   margin: 0 auto;
 }
@@ -29,7 +41,7 @@ body {
   clear: both;
 }
 
-/*-------------NAV--------------*/
+/*---------------------NAV----------------------------------*/
 .main-navigation {
   position: relative;
 
@@ -59,7 +71,6 @@ body {
   text-align: center;
 }
 
-
 .main-navigation a {
   display: block;
   padding: 15px 0;
@@ -77,7 +88,6 @@ body {
 
   opacity: .3;
 }
-
 
 .main-navigation a:hover {
   color: #81b3d2;
@@ -105,6 +115,7 @@ body {
   margin-left: -69px;
   padding: 0;
 }
+
 /*---------------Logo------------------*/
 
 .logo {
@@ -192,6 +203,7 @@ body {
   height: 256px;
 }
 
+
 .text-block {
   float: left;
   box-sizing: border-box;
@@ -234,10 +246,6 @@ body {
   padding: 0;
 }
 
-.colums {
-  margin-top: 55px;
-}
-
 .column {
   float: left;
   width: 196px;
@@ -245,6 +253,12 @@ body {
   margin-bottom: 55px;
   padding: 30px;
   overflow: hidden;
+
+  background: #eeeeee;
+}
+
+.column .white {
+  background: #ffffff;
 }
 
 .column h2 {
@@ -270,13 +284,13 @@ body {
   color: #333333;
 }
 
-.icon {
+.column-icon {
   margin-top: 20px;
 
   background-color: #ffffff;
 }
 
-.icon:before {
+.column-icon:before {
   content: '';
 
   display: block;
@@ -289,11 +303,14 @@ body {
   outline: 1px solid pink;
 }
 
+
+/*----------------------Index-search----------------------------*/
+
 .index-search {
   box-sizing: border-box;
   width: 100%;
   min-height: 595px;
-  margin-top: 135px;
+  margin-top: 130px;
 
   background: url(../img/map.jpg);
   border: 1px solid transparent;
@@ -301,29 +318,141 @@ body {
 
 .index-search form {
   width: 455px;
-  min-height: 370px;
+  min-height: 100px;
   margin: 0 auto;
-  margin-top: -85px;
+  margin-top: -55px;
   padding: 55px;
 
   background: #ffffff;
 }
 
-.index-search form .form-label {
-  min-height: 31px;
-  margin: -55px;
-  margin-bottom: 55px;
-  padding: 27px 10px;
+.index-search p {
+  position: relative;
 
+  margin: 0;
+  padding: 0;
+
+  font-weight: 700;
+  font-size: 0;
+  line-height: 26px;
+  vertical-align: top;
+  color: #000000;
+
+  border: 0;
+}
+
+.index-search label {
+  display: inline-block;
+  width: 110px;
+
+  font-size: 14px;
+}
+
+.index-search input[type='text'] {
+  width: 300px;
+  margin: 0;
+  margin-bottom: 29px;
+  padding: 0;
+  padding: 5px 5px;
+  padding-right: 40px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
+
+  background: #f2f2f2;
+  border: 0;
+}
+
+.index-search .calc {
+  display: inline-block;
+  width: 115px;
+  height: 30px;
+  padding-top: 10px;
+
+  vertical-align: middle;
+
+  background: #f2f2f2;
+}
+
+.adults {
+  display: inline-block;
+  width: 275px;
+  margin: 0;
+  padding-top: 10px;
+}
+.children {
+  display: inline-block;
+  width: 175px;
+  margin: 0;
+  padding-top: 10px;
+}
+
+.children label {
+  width: 60px;
+}
+
+.index-search .calc input {
+  width: 38px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+
+  font-size: 14px;
+  text-align: center;
+}
+
+.btn {
+  display: block;
+  margin: 0;
+  padding: 0;
+
+  font-weight: bold;
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background: #766357;
+  border: 0;
+}
+.btn-blue {
+  color: #ffffff;
+
+  background: #81b3d2;
+}
+.index-search .search-btn {
+  display: block;
+  width: 568px;
+  margin: -87px auto;
+  margin-bottom: 55px;
+  padding: 29px 10px;
+  padding-bottom: 33px;
+
+  font-size: 21px;
   text-align: center;
 
   background: #766357;
 }
+.index-search .submit {
+  margin-top: 58px;
+  padding: 17px;
 
+  font-size: 21px;
+}
+
+/*----------------------Fotter------------------*/
 .main-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
   width: 100%;
-  margin-top: -120px;
-  padding: 35px 0;
+  padding: 16px 0;
+  padding-bottom: 16px;
 
   font-size: 0;
 
@@ -339,9 +468,138 @@ body {
   text-align: center;
 }
 
+.footer-heshtag a {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 22px;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
 .social-btn {
   display: inline-block;
   width: 47px;
   height: 47px;
   margin-left: 5px;
+
+  text-decoration: none;
+
+  background: #81b3d2;
+}
+
+.footer-copyright span {
+  position: relative;
+  top: -30px;
+  left: -2px;
+
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 22px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.footer-copyright a {
+  display: inline-block;
+  width: 118px;
+  height: 80px;
+  margin-right: -15px;
+
+  font-size: 14px;
+  line-height: 22px;
+  color: #000000;
+  text-transform: uppercase;
+
+  background: url(../img/sprites.png) no-repeat;
+  outline: 1px solid pink;
+}
+/*-----------------Icons-------------------*/
+button[class^='icon-'] {
+  margin: 0;
+  padding: 0;
+
+  border: 0;
+}
+[class^='icon-']::before,
+[class*=' icon-']::before {
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  padding: 0;
+
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 1em;
+  font-family: 'symbols-sedona';
+  text-align: center;
+  text-transform: none;
+  font-style: normal;
+  font-variant: normal;
+
+  border: 0;
+
+  speak: none;
+}
+
+.icon-facebook::before {
+  content: '\66';
+} /* "f" */
+.icon-twitter::before {
+  content: '\74';
+} /* "t" */
+.icon-up-dir::before {
+  content: '\25b2';
+} /* "▲" */
+.icon-down-dir::before {
+  content: '\25bc';
+} /* "▼" */
+.icon-star::before {
+  content: '\2605';
+} /* "★" */
+.icon-check-off::before {
+  content: '\2610';
+} /* "☐" */
+.icon-check-on::before {
+  content: '\2611';
+} /* "☑" */
+.icon-calendar::before {
+  content: '\e800';
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  color: #a9a9a9;
+} /* "" */
+.icon-plus::before {
+  content: '\e801';
+} /* "" */
+.icon-minus::before {
+  content: '\e802';
+} /* "" */
+.icon-youtube::before {
+  content: '\f39e';
+} /* "" */
+
+.icon-plus::before,
+.icon-minus::before {
+  display: block;
+  width: 38px;
+
+  font-weight: 700;
+  font-size: 14px;
+  color: #a9a9a9;
+
+  background: #f2f2f2;
+}
+.icon-youtube::before,
+.icon-facebook::before,
+.icon-twitter::before {
+  position: relative;
+  top: 15px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-decoration: none;
 }
